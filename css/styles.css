@@ -6087,10 +6087,21 @@ a.close.disabled {
   background-color: #f7f8fa !important;
 }
 
+.menu-btn {
+  color: #f7f8fa;
+  background-color: #343a40 !important;
+}
+
+.menu-btn.collapsed {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #343a40;
+  border-color: #343a40;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
-  background-color: #148f77 !important;
+button.bg-primary:hover, {
+  color: #f7f8fa;
+  background-color: #343a40 !important;
 }
 
 .bg-secondary {
@@ -10117,12 +10128,14 @@ h3 {
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: #fff !important;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.75em;
   }
+}
+#mainNav.navbar-shrink {
+  background-color: #fff !important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
 }
 .masthead {
   padding-top: calc(6rem + 74px);
@@ -10280,9 +10293,14 @@ form .row:first-child .floating-label-form-group {
   padding-right: 20% !important;
 }
 
-@media (min-width: 515px) {
+.social {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 770px) {
   .social {
     display: inline;
+    margin-bottom: 0;
   }
 }
 
@@ -10303,6 +10321,13 @@ form .row:first-child .floating-label-form-group {
 
 .skills-group {
   margin-bottom: 30px;
+}
+
+@media (min-width: 770px) {
+  .skills-set {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 @media (min-width: 1200px) {
