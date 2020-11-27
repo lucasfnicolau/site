@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family:KohinoorBangla-Semibold, Kohinoor Bangla">{lfn}</a>
-                <button class="menu-btn navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -195,21 +195,72 @@
                 </div>
             </div>
         </section>
+        <!-- Contact Section-->
+        <section class="page-section bg-primary" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contato</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Nome</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor, digite seu nome." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Endereço de email" required="required" data-validation-required-message="Por favor, digite seu endereço de email." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Telefone</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Número de celular" required="required" data-validation-required-message="Por favor, digite seu número de celular." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Por favor, digite sua mensagem."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
                     <!-- Footer Social Icons-->
                     <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Contato</h4>
+                        <h4 class="text-uppercase mb-4">Onde me encontrar</h4>
                         <div class="social">
-                            <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto:contact@lucasfnicolau.com"><i class="fab fa-fw fas fa-envelope"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://linkedin.com/in/lucasfnicolau"><i class="fab fa-fw fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://medium.com/@lucasfnicolau"><i class="fab fa-fw fa-medium-m"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://github.com/lucasfnicolau"><i class="fab fa-fw fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://apps.apple.com/br/developer/lucas-nicolau/id1237412035"><i class="fab fa-fw fa-apple"></i></a>
                         </div>
                         <div class="social">
-                            <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://apps.apple.com/br/developer/lucas-nicolau/id1237412035"><i class="fab fa-fw fa-apple"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://podcasts.apple.com/br/podcast/corta-luz-podcast/id1518771078?l=pt"><i class="fab fa-fw fas fa-podcast"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://twitter.com/lucasfnicolau"><i class="fab fa-fw fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/lucasfnicolau"><i class="fab fa-fw fa-instagram"></i></a>
@@ -239,7 +290,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">StudyO</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">StudyOrganizer</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -247,12 +298,13 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /> -->
                                     <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/studyo/studyo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo StudyO em destaque">
+                                        <img class="app-screenshots" src="assets/img/portfolio/studyo/studyo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo StudyOrganizer em destaque">
                                     </div>
                                     <div class="container">
                                         <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/studyorganizer/id1444526598">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app StudyO na App Store">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app StudyOrganizer na App Store">
                                         </a>
                                     </div>
                                     <button class="btn btn-terciary" data-dismiss="modal">
@@ -278,24 +330,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">CaptureML</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/captureml/captureml_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo CaptureML em destaque">
-                                    </div>
-                                    <div class="container">
-                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/captureml/id1474426871">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app CaptureML na App Store">
-                                        </a>
-                                    </div>
-                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Fechar
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
@@ -316,24 +364,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Singleton</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/singleton/singleton_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Singleton em destaque">
-                                    </div>
-                                    <div class="container">
-                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/singleton-to-do/id1463854532">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Singleton na App Store">
-                                        </a>
-                                    </div>
-                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Fechar
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
@@ -354,24 +398,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Simplex Calc</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/simplex_calc/simplex_calc_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Simplex Calc em destaque">
-                                    </div>
-                                    <div class="container">
-                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/simplex-calc/id1360153531">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Simplex Calc na App Store">
-                                        </a>
-                                    </div>
-                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Fechar
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
@@ -392,24 +432,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Troco Certo</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/troco_certo/troco_certo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Troco Certo em destaque">
-                                    </div>
-                                    <div class="container">
-                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/troco-certo/id1479088599">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Troco Certo na App Store">
-                                        </a>
-                                    </div>
-                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Fechar
+                                        Close Window
                                     </button>
                                 </div>
                             </div>
