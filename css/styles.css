@@ -10420,3 +10420,13 @@ form .row:first-child .floating-label-form-group {
     padding-right: 20px !important;
   }
 }
+
+@media (max-width: 992px) {
+  p {
+    text-align: left !important;
+  }
+}
+
+#info {
+  text-align: center !important;
+}
