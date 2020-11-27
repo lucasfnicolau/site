@@ -10401,3 +10401,7 @@ form .row:first-child .floating-label-form-group {
     height: 200px;
   }
 }
+
+.readable {
+  box-sizing: content-box;
+}
