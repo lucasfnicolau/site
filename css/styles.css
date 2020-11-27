@@ -10312,6 +10312,7 @@ form .row:first-child .floating-label-form-group {
   height: 50px;
   margin-left: 16px;
   margin-right: 16px;
+  margin-bottom: 20px;
 }
 
 .skills-set {
@@ -10320,7 +10321,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .skills-group {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 @media (min-width: 770px) {
@@ -10369,19 +10370,34 @@ form .row:first-child .floating-label-form-group {
 }
 
 .wwdc {
+  box-sizing: content-box;
   width: 100% !important;
   margin: auto !important;
   text-align: center !important;
 }
 
 #wwdc-video {
-  width: 150%;
-  /* height: 315px; */
+  max-width: 1000px;
+  width: 70%;
+  height: 400px;
+}
+
+@media (max-width: 992px) {
+  #wwdc-video {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
   #wwdc-video {
-    width: 120%;
-    /* height: 85%; */
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  #wwdc-video {
+    width: 100%;
+    height: 200px;
   }
 }
