@@ -10341,3 +10341,47 @@ form .row:first-child .floating-label-form-group {
   width: 30%;
   margin-bottom: 20px;
 }
+
+.white-anchor {
+  margin-top: 20px;
+  color: #f7f8fa;
+  display: block;
+  font-size: 1.35rem;
+}
+
+.white-anchor:hover {
+  color: #f7f8fa !important;
+  text-decoration: underline;
+}
+
+.white-anchor:active {
+  text-decoration: underline;
+    color: #f7f8fa !important;
+}
+
+.white-anchor:focus {
+  text-decoration: underline;
+    color: #f7f8fa !important;
+}
+
+.profile {
+  background-image: url('../assets/img/background.svg') !important;
+}
+
+.wwdc {
+  width: 100% !important;
+  margin: auto !important;
+  text-align: center !important;
+}
+
+#wwdc-video {
+  width: 150%;
+  /* height: 315px; */
+}
+
+@media (max-width: 767px) {
+  #wwdc-video {
+    width: 120%;
+    /* height: 85%; */
+  }
+}

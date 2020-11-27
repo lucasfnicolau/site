@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family:KohinoorBangla-Semibold, Kohinoor Bangla">{lfn}</a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menu-btn navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -29,13 +29,14 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wwdc">WWDC</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead text-center">
+        <header class="profile masthead text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/lucas.png" alt="" />
@@ -177,84 +178,63 @@
                     <div class="text-center col-lg-12 ml-auto mt-4">
                         <h4 class="text-uppercase mb-4 skills-header">Experiência</h4>
                         <div class="col-lg-12 mb-5 mb-lg-0">
-                            <div class="skills-group">
-                                <img class="skills" src="assets/img/skills/swift.svg" alt="Logo do Swift (linguagem de programação)">
-                                <img class="skills" src="assets/img/skills/c.svg" alt="Logo do C (linguagem de programação)">
-                                <img class="skills" src="assets/img/skills/cpp.svg" alt="Logo do C++ (linguagem de programação)">
-                                <img class="skills" src="assets/img/skills/javascript.svg" alt="Logo do JavaScript (linguagem de programação)">
-                            </div>
-                            <div class="skills-group">
-                                <img class="skills" src="assets/img/skills/python.svg" alt="Logo do Python (linguagem de programação)">
-                                <img class="skills" src="assets/img/skills/flutter.svg" alt="Logo do Flutter">
-                                <img class="skills" src="assets/img/skills/java.svg" alt="Logo do Java (linguagem de programação)">
-                                <img class="skills" src="assets/img/skills/react_native.svg" alt="Logo do React Native">
-                                <img class="skills" src="assets/img/skills/github.svg" alt="Logo do GitHub">
-                            </div>
+                          <div class="skills-group">
+                              <img class="skills" src="assets/img/skills/swift.svg" alt="Logo do Swift (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/c.svg" alt="Logo do C (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/cpp.svg" alt="Logo do C++ (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/javascript.svg" alt="Logo do JavaScript (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/python.svg" alt="Logo do Python (linguagem de programação)">
+                          </div>
+                          <div class="skills-group">
+                              <img class="skills" src="assets/img/skills/flutter.svg" alt="Logo do Flutter">
+                              <img class="skills" src="assets/img/skills/java.svg" alt="Logo do Java (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/react_native.svg" alt="Logo do React Native">
+                              <img class="skills" src="assets/img/skills/github.svg" alt="Logo do GitHub">
+                              <img class="skills" src="assets/img/skills/figma.svg" alt="Logo do Figma">
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section bg-primary" id="contact">
+        <!-- WWDC Section-->
+        <section class="page-section bg-primary" id="wwdc">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contato</h2>
+                <!-- WWDC Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-dark">WWDC19 Scholarship</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Nome</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor, digite seu nome." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Endereço de email" required="required" data-validation-required-message="Por favor, digite seu endereço de email." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Telefone</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Número de celular" required="required" data-validation-required-message="Por favor, digite seu número de celular." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Mensagem</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Por favor, digite sua mensagem."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
-                        </form>
+                <!-- WWDC Section Content-->
+                <div class="row reading">
+                    <div class="text-center col-lg-12 ml-auto mt-4">
+                        <p class="lead">Em 2019, tive o privilégio de ser um dos estudantes escolhidos pela Apple para ganhar o WWDC Scholarship Award.</p>
+                        <p class="lead">Meu projeto submetido foi o desenvolvimento de um jogo chamado "Gameception", que consiste em um jogo dentro de outro jogo.</p>
                     </div>
+                </div>
+                <!-- WWDC Section Skills-->
+                <div class="row reading skills-set">
+                    <div class="text-center col-lg-12 ml-auto mt-4">
+                        <h4 class="text-uppercase mb-4 skills-header">Demo</h4>
+                    </div>
+                </div>
+                <div class="wwdc">
+                  <iframe id="wwdc-video" src="https://www.youtube.com/embed/e2HxvWZ9e5k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class="footer text-center" id="contact">
             <div class="container">
                 <div class="row">
                     <!-- Footer Social Icons-->
                     <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Onde me encontrar</h4>
+                        <h4 class="text-uppercase mb-4">Contato</h4>
                         <div class="social">
+                            <!-- <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto:contact@lucasfnicolau.com"><i class="fab fa-fw fas fa-envelope"></i></a> -->
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://linkedin.com/in/lucasfnicolau"><i class="fab fa-fw fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://medium.com/@lucasfnicolau"><i class="fab fa-fw fa-medium-m"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://github.com/lucasfnicolau"><i class="fab fa-fw fa-github"></i></a>
@@ -265,6 +245,7 @@
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://twitter.com/lucasfnicolau"><i class="fab fa-fw fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/lucasfnicolau"><i class="fab fa-fw fa-instagram"></i></a>
                         </div>
+                        <a class="white-anchor" target="_blank" href="mailto:hey@lucasfnicolau.com">hey@lucasfnicolau.com</a>
                     </div>
                 </div>
             </div>
@@ -290,7 +271,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">StudyOrganizer</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">StudyO</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -298,13 +279,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /> -->
                                     <div class="container">
-                                        <img class="app-screenshots" src="assets/img/portfolio/studyo/studyo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo StudyOrganizer em destaque">
+                                        <img class="app-screenshots" src="assets/img/portfolio/studyo/studyo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo StudyO em destaque">
                                     </div>
                                     <div class="container">
                                         <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/studyorganizer/id1444526598">
-                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app StudyOrganizer na App Store">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app StudyO na App Store">
                                         </a>
                                     </div>
                                     <button class="btn btn-terciary" data-dismiss="modal">
@@ -330,20 +310,24 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">CaptureML</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/captureml/captureml_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo CaptureML em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/captureml/id1474426871">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app CaptureML na App Store">
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-terciary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -364,20 +348,24 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Singleton</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/singleton/singleton_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Singleton em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/singleton-to-do/id1463854532">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Singleton na App Store">
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-terciary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -398,20 +386,24 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Simplex Calc</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/simplex_calc/simplex_calc_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Simplex Calc em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/simplex-calc/id1360153531">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Simplex Calc na App Store">
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-terciary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -432,20 +424,24 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Troco Certo</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/troco_certo/troco_certo_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Troco Certo em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/troco-certo/id1479088599">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Troco Certo na App Store">
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-terciary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -473,13 +469,329 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/roleta/roleta_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Rolêta em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/br/app/rol%C3%AAta/id1504336358">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Rolêta na App Store">
+                                        </a>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Rolêta</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/roleta/roleta_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Rolêta em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/br/app/rol%C3%AAta/id1504336358">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Rolêta na App Store">
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Mackenzie</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/mackenzie/mackenzie_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Mackenzie em destaque">
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Fifômetro</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/fifometro_screenshots/fifometro_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo Fifômetro em destaque">
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 10-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Dõpu</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/dopu/dopu_screenshot.png" alt="Televisão/AppeTV com o aplicativo Dõpu em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/d%C3%B5pu/id1524098225">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Dõpu na App Store">
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 11-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Go</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/go/go_screenshots.png" alt="Apple Watch com o aplicativo Go em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/go-reach-your-destiny/id1503410076">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Go na App Store">
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 12-->
+        <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Termos Médicos</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/termos/termos_screenshots.png" alt="Três iPhones com o aplicativo Termos Médicos em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/br/app/termos-m%C3%A9dicos/id1531619145">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Termos Médicos na App Store">
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 13-->
+        <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">The Hatch</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/the_hatch/the_hatch_screenshots.png" alt="Um iPad e um iPhone com o aplicativo The Hatch em destaque">
+                                    </div>
+                                    <div class="container">
+                                        <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/d%C3%B5pu/id1524098225">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Dõpu na App Store">
+                                        </a>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 14-->
+        <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">PREMAX</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="container">
+                                        <img class="app-screenshots" src="assets/img/portfolio/premax/premax_screenshots.png" alt="Três iPhones com diferentes telas do aplicativo PREMAX em destaque">
+                                    </div>
+                                    <!-- <div class="container"> -->
+                                        <!-- <a class="app-store" target="_blank" href="https://apps.apple.com/us/app/d%C3%B5pu/id1524098225">
+                                            <img class="app-store" src="assets/img/app_store.svg" alt="Botão para download do app Dõpu na App Store">
+                                        </a> -->
+                                    <!-- </div> -->
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
+                                    <button class="btn btn-terciary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
