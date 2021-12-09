@@ -59,6 +59,9 @@ const androidApps = [
   {
     name: 'Mackenzie',
   },
+  {
+    name: 'World Cup',
+  },
 ];
 
 var platform = 'iOS';
