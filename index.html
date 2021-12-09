@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/index.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,10 +28,10 @@
                 </button>
                 <div class="collapse navbar-collapse text-uppercase " id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfólio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wwdc">WWDC</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,7 +40,7 @@
         <header class="profile masthead text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/lucas.png" alt="" />
+                <img class="masthead-avatar mb-5" src="assets/img/lucas_circle.png" alt="" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Lucas Fernandez Nicolau</h1>
                 <!-- Icon Divider-->
@@ -49,12 +50,12 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p id="info" class="masthead-subheading reading font-weight-light mb-0">Desenvolvedor iOS apaixonado por filmes, séries, trilhas sonoras, podcasts e futebol.</p>
+                <p id="info" class="masthead-subheading reading mb-0" style="font-size: 1.4rem"><strong>Mobile Engineer</strong> passionated about the combination between consistent software, a beautiful UI and a great UX.<br>Also cinephile, football addict, soundtrack lover, meme laughter and science fan.</p>
             </div>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section bg-primary portfolio" id="portfolio">
-            <div class="container">
+        <section class="page-section bg-primary portfolio">
+            <div id="portfolio-container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
@@ -63,106 +64,12 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div> -->
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/studyo/studyo.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/captureml/captureml.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/singleton/singleton.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/simplex_calc/simplex_calc.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/troco_certo/troco_certo.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/sigla/sigla.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 7-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/roleta/roleta.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 8-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/mackenzie/mackenzie.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 9-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/fifometro/fifometro.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 10-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal10">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/dopu/dopu.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 11-->
-                    <div class="col-md-2 col-lg-2 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal11">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/go/go.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 12-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal12">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/game_of_life/game_of_life.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 13-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal13">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/termos/termos.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 14-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal14">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/the_hatch/the_hatch.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 15-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal15">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/premax/premax.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 16-->
-                    <div class="col-md-2 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal16">
-                            <img class="img-fluid portfolio-item-image" src="assets/img/portfolio/epic_ball/epic_ball.png" alt="" />
-                        </div>
+                <div id="portfolio" style="display: flex; justify-content: center; padding-top: 15px; margin-top: -15px; margin-bottom: 15px"><img id="platform-switch" /></div>
+                <!-- Portfolio-->
+                <!-- Device-->
+                <div id="device-container">
+                    <div id="device">
+                        <div id="apps"></div>
                     </div>
                 </div>
             </div>
@@ -171,7 +78,7 @@
         <section class="page-section text-dark mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-dark">Sobre</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-dark">About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -181,28 +88,34 @@
                 <!-- About Section Content-->
                 <div class="row reading">
                     <div class="text-center col-lg-12 ml-auto mt-4">
-                        <p class="lead readable">Sou um desenvolvedor iOS apaixonado pela combinação entre software consistente, uma linda UI e uma excelente UX.</p>
-                        <p class="lead readable">Comecei a programar com 14 anos, me aventurando com Java e C/C++. Possuo experiência desenvolvendo apps desde 2015, começando com Android e migrando para iOS, iPadOS, watchOS, tvOS e macOS.</p>
+                        <p class="lead readable">My programming journey started when I was 14 years old, exploring the wonderful world of possibilities that were opened when my first "Hello, world!" was written.</p>
+                        <p class="lead readable">The first two programming languages that I took the time to learn were Java and C. After that, back in 2015, my mobile development experience began, starting by developing Android apps and then migrating to iOS. During this period I also had many experiences with React Native and Flutter.</p>
+                        <p class="lead readable">I was fortunate to spend two years at the Apple Developer Academy, where I had the opportunity to explore almost every Apple framework (UIKit, WatchKit, AppKit, CoreML, CreateML, ARKit, CloudKit, CoreData and many, many others) available, developing and releasing more than 10 apps to the App Store. Alongside with that, I have improved my soft skills, by having a lot of different apps presentations and research approaches.</p>
                     </div>
+                </div>
+                <div class="download-resume">
+                   <a href="https://mega.nz/file/38Q2FLrQ#PLzY734udfj_iu6sxQuzs5z3QC-f4lw1DJMW8WZPAmg" target="_blank" download><img src="./assets/img/download.svg" style="width:20px; font-size:3rem; padding-bottom:2px; margin-right:4px" alt="Download" />My Resume</a>
                 </div>
                 <!-- About Section Skills-->
                 <div class="row reading skills-set">
                     <div class="text-center col-lg-12 ml-auto mt-4">
-                        <h4 class="text-uppercase mb-4 skills-header">Experiência</h4>
+                        <h4 class="text-uppercase mb-4 skills-header">Skills</h4>
                         <div class="col-lg-12 mb-5 mb-lg-0">
                           <div class="skills-group">
                               <img class="skills" src="assets/img/skills/swift.svg" alt="Logo do Swift (linguagem de programação)">
-                              <img class="skills" src="assets/img/skills/c.svg" alt="Logo do C (linguagem de programação)">
-                              <img class="skills" src="assets/img/skills/cpp.svg" alt="Logo do C++ (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/android.svg" alt="Logo do Android (sistema operacional)">
                               <img class="skills" src="assets/img/skills/javascript.svg" alt="Logo do JavaScript (linguagem de programação)">
                               <img class="skills" src="assets/img/skills/python.svg" alt="Logo do Python (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/kotlin.svg" alt="Logo do Kotlin (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/java.svg" alt="Logo do Java (linguagem de programação)">
                           </div>
                           <div class="skills-group">
                               <img class="skills" src="assets/img/skills/flutter.svg" alt="Logo do Flutter">
-                              <img class="skills" src="assets/img/skills/java.svg" alt="Logo do Java (linguagem de programação)">
                               <img class="skills" src="assets/img/skills/react_native.svg" alt="Logo do React Native">
                               <img class="skills" src="assets/img/skills/github.svg" alt="Logo do GitHub">
                               <img class="skills" src="assets/img/skills/figma.svg" alt="Logo do Figma">
+                              <img class="skills" src="assets/img/skills/c.svg" alt="Logo do C (linguagem de programação)">
+                              <img class="skills" src="assets/img/skills/cpp.svg" alt="Logo do C++ (linguagem de programação)">
                           </div>
                         </div>
                     </div>
@@ -223,8 +136,9 @@
                 <!-- WWDC Section Content-->
                 <div class="row reading">
                     <div class="text-center col-lg-12 ml-auto mt-4">
-                        <p class="lead readable">Em 2019, tive o privilégio de ser um dos estudantes escolhidos pela Apple para ganhar o WWDC Scholarship Award.</p>
-                        <p class="lead readable">Meu projeto submetido foi o desenvolvimento de um jogo chamado "Gameception", que consiste em um jogo dentro de outro jogo.</p>
+                        <p class="lead readable">In 2019 I was one of the students around the world who was chosen to win the Apple's WWDC19 Scholarship.</p>
+                        <p class="lead readable">My project was the development of a game called "Gameception", which is a game inside another game! You have to play it thinking about two different behaviors and controls, making it a fun and difficult experience.</p>
+                        <p class="lead readable">You start the game by chosing the "Portals" icon on the phone seen on the screen, and then it starts. Basically you are the player holding the smartphone, so you need to move arund picking up actions that will reflect in the game on the right, which represents the "Portal" game chosen at the beginning.</p>
                     </div>
                 </div>
                 <!-- WWDC Section Skills-->
@@ -244,7 +158,7 @@
                 <div class="row">
                     <!-- Footer Social Icons-->
                     <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Contato</h4>
+                        <h4 class="text-uppercase mb-4">Contact</h4>
                         <div class="social">
                             <!-- <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="mailto:contact@lucasfnicolau.com"><i class="fab fa-fw fas fa-envelope"></i></a> -->
                             <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://linkedin.com/in/lucasfnicolau"><i class="fab fa-fw fa-linkedin-in"></i></a>
