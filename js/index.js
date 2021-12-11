@@ -64,6 +64,9 @@ const androidApps = [
   },
   {
     name: 'Be Fast!!'
+  },
+  {
+    name: 'Lorian'
   }
 ];
 
