@@ -123,7 +123,7 @@ function setup() {
   androidAppsGrid.style.marginLeft = '50px';
   androidAppsGrid.style.marginRight = '50px';
   androidAppsGrid.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
-  androidAppsGrid.style.gridTemplateRows = `repeat(${androidApps.length * 1.8}, 1fr)`;
+  androidAppsGrid.style.gridTemplateRows = `repeat(${androidApps.length}, 1fr)`;
   androidAppsGrid.style.gridColumn = `${deviceHeight / 14}px`;
   androidAppsGrid.style.visibility = platform === 'Android' ? 'visible' : 'hidden';
   androidAppsGrid.innerHTML = '';
