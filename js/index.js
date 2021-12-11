@@ -62,6 +62,9 @@ const androidApps = [
   {
     name: 'World Cup',
   },
+  {
+    name: 'Be Fast!!'
+  }
 ];
 
 var platform = 'iOS';
