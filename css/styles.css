@@ -10370,34 +10370,34 @@ form .row:first-child .floating-label-form-group {
   /* background-image: url('../assets/img/background.svg') !important; */
 }
 
-.wwdc {
+.wwdc, .sigla {
   box-sizing: content-box;
   width: 100% !important;
   margin: auto !important;
   text-align: center !important;
 }
 
-#wwdc-video {
+.demo-video {
   max-width: 1000px;
   width: 70%;
   height: 400px;
 }
 
 @media (max-width: 992px) {
-  #wwdc-video {
+  .demo-video {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  #wwdc-video {
+  .demo-video {
     width: 100%;
     height: 300px;
   }
 }
 
 @media (max-width: 500px) {
-  #wwdc-video {
+  .demo-video {
     width: 100%;
     height: 200px;
   }
