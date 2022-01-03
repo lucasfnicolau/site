@@ -10366,10 +10366,6 @@ form .row:first-child .floating-label-form-group {
     color: #f7f8fa !important;
 }
 
-.profile {
-  /* background-image: url('../assets/img/background.svg') !important; */
-}
-
 .wwdc, .sigla {
   box-sizing: content-box;
   width: 100% !important;
@@ -10451,4 +10447,8 @@ form .row:first-child .floating-label-form-group {
 
 .download-resume a {
   font-size: 1.2rem !important;
+}
+
+#profile-photo {
+  border-radius: 7.5rem;
 }
