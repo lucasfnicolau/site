@@ -1,48 +1,63 @@
 const iOSApps = [
   {
     name: 'CaptureML',
+    url: 'https://apps.apple.com/us/app/captureml/id1474426871'
   },
   {
     name: 'PREMAX',
+    url: ''
   },
   {
     name: 'Mackenzie',
+    url: ''
   },
   {
     name: 'The Hatch',
+    url: 'https://apps.apple.com/us/app/the-hatch-splashing-around/id1490932827'
   },
   {
     name: 'StudyO',
+    url: 'https://apps.apple.com/us/app/studyorganizer/id1444526598'
   },
   {
     name: 'Simplex Calc',
+    url: ''
   },
   {
     name: 'Singleton',
+    url: 'https://apps.apple.com/us/app/studyorganizer/id1444526598'
   },
   {
     name: 'Troco Certo',
+    url: ''
   },
   {
     name: 'Termos',
+    url: 'https://apps.apple.com/us/app/termos-médicos/id1531619145'
   },
   {
     name: 'SIGLA',
+    url: ''
   },
   {
-    name: 'Fifômetro'
+    name: 'Fifômetro',
+    url: ''
   },
   {
     name: 'Dopu',
+    url: ''
   },
   {
-    name: 'Game of Life'
+    name: 'Game of Life',
+    url: ''
   },
   {
     name: 'Rolêta',
+    url: 'https://apps.apple.com/us/app/rolêta/id1504336358'
   },
   {
     name: 'Epic Ball',
+    url: ''
   },
 ];
 
@@ -106,7 +121,7 @@ function setup() {
   iOSAppsGrid.style.visibility = platform === 'iOS' ? 'visible' : 'hidden';
   iOSAppsGrid.innerHTML = '';
   for (let i = 0; i < iOSApps.length; i++) {
-    iOSAppsGrid.appendChild(appIcon(iOSApps[i].name, deviceHeight, 'iOS'));
+    iOSAppsGrid.appendChild(appIcon(iOSApps[i].name, iOSApps[i].url, deviceHeight, 'iOS'));
   }
 
   const androidDevice = document.getElementById('android-device');
@@ -131,9 +146,8 @@ function setup() {
   androidAppsGrid.style.visibility = platform === 'Android' ? 'visible' : 'hidden';
   androidAppsGrid.innerHTML = '';
   for (let i = 0; i < androidApps.length; i++) {
-    androidAppsGrid.appendChild(appIcon(androidApps[i].name, deviceHeight, 'Android'));
+    androidAppsGrid.appendChild(appIcon(androidApps[i].name, '', deviceHeight, 'Android'));
   }
-
 
   const platformSwitch = document.getElementById('platform-switch');
   platformSwitch.style.width = `${deviceWidth / 5.5}px`;
@@ -149,23 +163,39 @@ function switchPlatform() {
   setup();
 }
 
-function appIcon(name, deviceHeight, platform) {
+function appIcon(name, url, deviceHeight, platform) {
   const div = document.createElement('div');
   const img = document.createElement('img');
   const span = document.createElement('span');
 
+  div.className = name;
   div.style.display = 'flex';
   div.style.flexDirection = 'column';
   div.style.alignItems = 'center';
   div.style.marginBottom = '15px';
   div.style.cursor = 'pointer';
   div.style.width = `${deviceHeight / 9.8}px`;
+  div.dataToggle = 'modal';
+  div.dataTarget = 'portfolioModal';
+  
+  if (platform === 'iOS') {
+    div.onclick = () => {
+      $('#portfolioModal').modal();
+      document.getElementById('modalImage').src = `./assets/img/portfolio/${name}/${name} Screenshot.png`;
+      document.getElementById('portfolioModalLabel').innerText = name;
+      document.getElementById('modalDescriptionLabel').innerText = '';
+      document.getElementById('modalAppStoreURL').href = url;
+      if (url === '') {
+        document.getElementById('modalAppStoreButtonContainer').style.display = 'none';
+      }
+    };
+  }
 
   const imgWidth = deviceHeight / 14;
   img.style.width = `${imgWidth}px`;
   img.style.borderRadius = `${platform === 'iOS' ? 0 : imgWidth}px`;
   img.style.marginBottom = '4px';
-  img.src = `./assets/img/portfolio/${name}.png`;
+  img.src = `./assets/img/portfolio/${name}/${name}.png`;
   img.alt = name;
 
   span.innerText = name;
