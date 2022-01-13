@@ -187,6 +187,8 @@ function appIcon(name, url, deviceHeight, platform) {
       document.getElementById('modalAppStoreURL').href = url;
       if (url === '') {
         document.getElementById('modalAppStoreButtonContainer').style.display = 'none';
+      } else {
+        document.getElementById('modalAppStoreButtonContainer').style.display = 'block';
       }
     };
   }
