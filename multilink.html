@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function openLinks() {
+            const textAreaValue = document.getElementById('textarea').value.trim();
+            let links = textAreaValue.includes('https') ? textAreaValue.split('https://') : textAreaValue.split('http://');
+            for (let i = 0; i < links.length; i++) {
+                if (links[i] != '') {
+                    links[i] = textAreaValue.includes('https') ? `https://${links[i].trim()}` : `http://${links[i].trim()}`;
+                    window.open(links[i], '_blank');
+                }
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilink</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <textarea style="width:800px; height:80px" id="textarea"></textarea>
+    <button style="width:300px; height:40px" onclick=openLinks()>Abrir</button>
+</body>
+</html>
