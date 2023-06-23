@@ -32,10 +32,6 @@ const iOSApps = [
     url: ''
   },
   {
-    name: 'Termos',
-    url: 'https://apps.apple.com/us/app/termos-médicos/id1531619145'
-  },
-  {
     name: 'SIGLA',
     url: ''
   },
@@ -67,9 +63,6 @@ const androidApps = [
   },
   {
     name: 'Epic Ball',
-  },
-  {
-    name: 'Termos',
   },
   {
     name: 'Mackenzie',
